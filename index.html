@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Invitation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <h1 class="title">A Special Valentine&apos;s Surprise 💌</h1>
+
+      <section class="envelope-area" aria-live="polite">
+        <div class="envelope" id="envelope">
+          <button class="flap" id="flap" aria-label="Open the envelope flap">
+            <span>Click to open</span>
+          </button>
+          <div class="envelope-body"></div>
+        </div>
+
+        <article class="letter" id="letter">
+          <h2>Dear You,</h2>
+          <p>
+            Would you make this Valentine&apos;s Day extra special by being my date?
+            ✨
+          </p>
+          <p>
+            There will be cozy vibes, sweet treats, and all my favorite moments
+            with you.
+          </p>
+          <p class="signed">With all my heart, <br />Me ❤️</p>
+        </article>
+      </section>
+
+      <section class="choices" id="choices" aria-label="Invitation response options">
+        <button class="btn yes" id="yesBtn">Yes 💖</button>
+        <button class="btn no" id="noBtn">No 🙈</button>
+      </section>
+    </main>
+
+    <div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+      <div class="popup-card">
+        <h3 id="popup-title">Yay! 🥰</h3>
+        <p>Thank you for saying yes — I&apos;ll be waiting for our special day!</p>
+        <button id="closePopup" class="btn close">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
